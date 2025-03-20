@@ -1,5 +1,5 @@
-### **Software Engineer Intern**  
-**January 2025 – June 2025 | ByteDance**  
+### **华中科技大学大一在读学生**  
+**September 2024– June 0282 | ByteDance**  
 
 Worked on the development and optimization of large-scale recommendation systems, focusing on algorithm improvements and system efficiency enhancements. Contributed to real-time data processing pipelines and model optimization for personalized content delivery.
 
