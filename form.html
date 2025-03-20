@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>职业申请表</title>
+    <title>申请表</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: green;
             color: white;
             padding: 20px;
+        }
+        h1 {
+            text-align: center; /* 标题居中 */
         }
         form {
             background-color: darkgreen;
@@ -49,7 +52,7 @@
     </style>
 </head>
 <body>
-    <h1>职业申请表</h1>
+    <h1>申请表</h1> <!-- 标题改为“申请表” -->
     <form action="/submit" method="post">
         <label for="name">姓名：</label>
         <input type="text" id="name" name="name" required><br><br>
@@ -63,13 +66,7 @@
         <label for="web-developer">Web开发人员</label><br><br>
 
         <label for="requirements">其他要求：</label><br>
-        <textarea id="requirements" name="requirements" rows="4" cols="50"></textarea><br><br>
-
-        <label for="salary">期望薪水待遇：</label>
-        <input type="text" id="salary" name="salary" required><br><br>
-
-        <label for="location">期望工作地点：</label>
-        <input type="text" id="location" name="location" required><br><br>
+        <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="包括薪水待遇、工作地点"></textarea><br><br>
 
         <input type="checkbox" id="confirm" name="confirm" required>
         <label for="confirm">发送确认消息</label><br><br>
