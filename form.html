@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>职业申请表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: green;
+            color: white;
+            padding: 20px;
+        }
+        form {
+            background-color: darkgreen;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="reset"] {
+            background-color: #ccc;
+        }
+        button[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>职业申请表</h1>
+    <form action="/submit" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label>感兴趣的职位：</label><br>
+        <input type="radio" id="web-designer" name="position" value="Web设计人员" required>
+        <label for="web-designer">Web设计人员</label><br>
+        <input type="radio" id="web-admin" name="position" value="Web管理员" required>
+        <label for="web-admin">Web管理员</label><br>
+        <input type="radio" id="web-developer" name="position" value="Web开发人员" required>
+        <label for="web-developer">Web开发人员</label><br><br>
+
+        <label for="requirements">其他要求：</label><br>
+        <textarea id="requirements" name="requirements" rows="4" cols="50"></textarea><br><br>
+
+        <label for="salary">期望薪水待遇：</label>
+        <input type="text" id="salary" name="salary" required><br><br>
+
+        <label for="location">期望工作地点：</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">发送确认消息</label><br><br>
+
+        <label for="experience">经验：</label>
+        <select id="experience" name="experience" required>
+            <option value="无经验">无经验</option>
+            <option value="1-3年">1-3年</option>
+            <option value="3-5年">3-5年</option>
+            <option value="5年以上">5年以上</option>
+        </select><br><br>
+
+        <button type="reset">重置</button>
+        <button type="submit">确定</button>
+    </form>
+</body>
+</html>
