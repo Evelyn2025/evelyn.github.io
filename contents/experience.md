@@ -1,4 +1,4 @@
-### **华中科技大学大一在读学生**  
+### **freshman of HUST**  
 **September 2024– June 2028 | ByteDance**  
 
 Study to devote myself to China.
@@ -8,7 +8,7 @@ work hard to enter HUST.
 
 ---
 
-### **软件工程师实习生**  
+### **华中科技大学大一在读学生**  
 **2024年9月 – 2028年6月 | 字节跳动**  
 
 为中华之崛起而读书。
