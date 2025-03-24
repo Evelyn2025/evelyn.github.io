@@ -1,4 +1,4 @@
-[![XX](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
+[![吴宛霖](https://img.shields.io/badge/XX-github-blue?logo=github)](https://github.com/XX)
 
 I'm currently pursuing a Bachelor's degree in Engineering at the Department of Naval engineering,Hust.
 
