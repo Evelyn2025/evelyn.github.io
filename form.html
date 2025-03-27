@@ -12,7 +12,7 @@
             padding: 20px;
         }
         h1 {
-            text-align: center; /* 标题居中 */
+            text-align: center;
         }
         form {
             background-color: darkgreen;
@@ -32,8 +32,12 @@
             border: 1px solid #ccc;
             border-radius: 4px;
         }
-        input[type="checkbox"] {
-            margin-right: 8px;
+        .checkbox-group {
+            margin-bottom: 16px;
+        }
+        .checkbox-group label {
+            display: inline-block;
+            margin-right: 15px;
         }
         button {
             padding: 10px 20px;
@@ -52,20 +56,24 @@
     </style>
 </head>
 <body>
-    <h1>申请表</h1> <!-- 标题改为“申请表” -->
+    <h1>申请表</h1>
     <form action="/submit" method="post">
         <label for="name">姓名：</label>
         <input type="text" id="name" name="name" required><br><br>
 
-        <label>感兴趣的职位：</label><br>
-        <input type="radio" id="web-designer" name="position" value="Web设计人员" required>
-        <label for="web-designer">Web设计人员</label><br>
-        <input type="radio" id="web-admin" name="position" value="Web管理员" required>
-        <label for="web-admin">Web管理员</label><br>
-        <input type="radio" id="web-developer" name="position" value="Web开发人员" required>
-        <label for="web-developer">Web开发人员</label><br><br>
+        <label>感兴趣的职位：</label>
+        <div class="checkbox-group">
+            <input type="checkbox" id="web-designer" name="position[]" value="Web设计人员">
+            <label for="web-designer">Web设计人员</label>
+            
+            <input type="checkbox" id="web-admin" name="position[]" value="Web管理员">
+            <label for="web-admin">Web管理员</label>
+            
+            <input type="checkbox" id="web-developer" name="position[]" value="Web开发人员">
+            <label for="web-developer">Web开发人员</label>
+        </div>
 
-        <label for="requirements">其他要求：</label><br>
+        <label for="requirements">其他要求：</label>
         <textarea id="requirements" name="requirements" rows="4" cols="50" placeholder="包括薪水待遇、工作地点"></textarea><br><br>
 
         <input type="checkbox" id="confirm" name="confirm" required>
